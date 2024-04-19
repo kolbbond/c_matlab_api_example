@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(test_matlab_api)
+project(main)
 
 # cmake helpers
 include("$ENV{CMAKEHELPERS_DIR}/PrintHelpers.cmake")
@@ -18,7 +18,7 @@ endif(Matlab_FOUND)
 
 
 # build - link to matlab engine
-add_executable(${PROJECT_NAME} test_api.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} 
     Matlab::mex
     Matlab::mx

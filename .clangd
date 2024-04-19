@@ -1,0 +1,4 @@
+CompileFlags:
+	Add:
+	- "-I/home/kolbbond/programs/cpp/c_matlab_api_example/include"
+	- "-I/home/kolbbond/build/MATLAB/2023b/extern/include"
